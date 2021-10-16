@@ -57,8 +57,8 @@ Rectangle {
             // for (let prop in sessionModel) {
             //     console.log(prop + ": " + sessionModel[prop])
             // }
-            if (status == Image.Error && source != "heather.jpg") {
-                source = "heather.jpg"
+            if (status == Image.Error && source != config.defaultbackground) {
+                source = config.defaultbackground
             }
         }
     }
