@@ -58,6 +58,7 @@ Rectangle {
             //     console.log(prop + ": " + sessionModel[prop])
             // }
             if (status == Image.Error && source != config.defaultbackground) {
+                errorMessage.text = "Failed to load image " + source
                 source = config.defaultbackground
             }
         }
@@ -207,6 +208,15 @@ Rectangle {
             triggeredOnStart: true
             onTriggered: parent.text = new Date().toLocaleTimeString(Qt.locale(), Locale.ShortFormat)
         }
+    }
+
+    Text {
+        id: errorMessage
+        anchors.top: loginWindow.bottom
+        anchors.horizontalCenter: parent.horizontalCenter
+        anchors.margins: themeVars.fontSize
+        text: ""
+        color: "red"
     }
 
     
