@@ -45,7 +45,7 @@ Rectangle {
     Image {
         id: backgroundImage
         anchors.fill: parent
-        source: "https://source.unsplash.com/1920x1080/?autumn"
+        // source: "https://source.unsplash.com/1920x1080/?autumn"
         source: "./heather.jpg"
         fillMode: Image.PreserveAspectCrop
 
@@ -211,23 +211,23 @@ Rectangle {
 
     
 
-    Rectangle {
-        id: overlay
-        anchors.fill: parent
-        color: "black"
-        opacity: 1.0
+    // Rectangle {
+    //     id: overlay
+    //     anchors.fill: parent
+    //     color: "black"
+    //     opacity: 1.0
 
-        states: [
-            State {
-                name: "HIDDEN"
-                when: backgroundImage.status == Image.Ready
-                PropertyChanges { target: overlay; opacity: 0.0 }
-            }
-        ]
+    //     states: [
+    //         State {
+    //             name: "HIDDEN"
+    //             when: backgroundImage.status == Image.Ready
+    //             PropertyChanges { target: overlay; opacity: 0.0 }
+    //         }
+    //     ]
 
-        transitions: Transition {
-            to: "HIDDEN"; reversible: true
-            NumberAnimation { properties: "opacity"; easing.type: Easing.InOutQuart; duration: 1000 }
-        }
-    }
+    //     transitions: Transition {
+    //         to: "HIDDEN"; reversible: true
+    //         NumberAnimation { properties: "opacity"; easing.type: Easing.InOutQuart; duration: 1000 }
+    //     }
+    // }
 }
