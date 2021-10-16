@@ -1,0 +1,16 @@
+[SddmGreeterTheme]
+Name=Base16 Minimal
+Description=A minimalist SDDM theme inspired by LightDM Mini Greeter
+Author=Benjamin Lodi
+Copyright=(c) 2021, Benjamin Lodi
+License=CC-BY-SA
+Type=sddm-theme
+Version=0.1
+Website=https://github.com/brlodi/sddm-theme-base16-minimal
+Screenshot=base16-minimal.jpg
+MainScript=Main.qml
+ConfigFile=theme.conf
+TranslationsDirectory=translations
+Email=brlodi@gmail.com
+Theme-Id=base16-minimal
+Theme-API=2.0
