@@ -46,7 +46,7 @@ Rectangle {
         id: backgroundImage
         anchors.fill: parent
         // source: "https://source.unsplash.com/1920x1080/?autumn"
-        source: "./heather.jpg"
+        source: "heather.jpg"
         fillMode: Image.PreserveAspectCrop
 
         onStatusChanged: {
@@ -57,8 +57,8 @@ Rectangle {
             // for (let prop in sessionModel) {
             //     console.log(prop + ": " + sessionModel[prop])
             // }
-            if (status == Image.Error && source != "./heather.jpg") {
-                source = "./heather.jpg"
+            if (status == Image.Error && source != "heather.jpg") {
+                source = "heather.jpg"
             }
         }
     }
